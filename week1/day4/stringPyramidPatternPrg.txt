@@ -1,0 +1,29 @@
+OUT PUT
+
+P
+PR
+PRO
+PROG
+PROGR
+PROGRA
+PROGRAM
+
+PROGRAM
+
+import java.util.*;
+class stringPyramidPatternPrg
+{
+	public static void main(String arg[])
+	{
+		String s="program";
+		int l=s.length();
+		for(int i=1;i<=l;i++)
+		{
+			for(int j=0;j<i;j++)
+			{
+				System.out.print(s.charAt(j));
+			}
+		System.out.println();
+		}
+	}
+}

@@ -1,0 +1,34 @@
+OUT PUT
+
+*****
+* * *
+*****
+* * *
+*****
+
+PROGRAM
+
+import java.util.*;
+class FourSquarePatternPrg
+{
+	public static void main(String arg[])
+	{
+		int n=5;
+		int center=(n/2)+1;
+		for(int i=1;i<=n;i++)
+		{
+			for(int j=1;j<=n;j++)
+			{
+				if(i==1||i==n||j==1||j==n||i==center||j==center)
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
