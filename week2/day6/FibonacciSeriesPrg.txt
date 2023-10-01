@@ -1,0 +1,36 @@
+INPUT
+153
+
+OUTPUT
+153 is a amstrong number
+
+PROGRAM
+
+import java.util.*;
+	class Amstrongnumber
+	{
+		public static void main(String arg[])
+		{
+			int rem,quo,result=0,cube;
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the number : ");
+			int num=input.nextInt();
+			int temp=num;
+			while(num>0)
+			{
+				rem=num%10;
+				quo=num/10;
+				cube=rem*rem*rem;
+				num=quo;
+				result=cube+result;
+			}
+			if(temp==result)
+			{
+				System.out.print(temp+" is a amstrong number");
+			}
+			else
+			{
+				System.out.print(temp+" is not a amstrong number");
+			}
+		}
+	}

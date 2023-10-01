@@ -1,0 +1,47 @@
+INPUT
+Enter the array length: 4
+Enter the array elements:
+67
+23
+89
+53
+
+OUTPUT
+The minimum value is: 23
+The maximum value is: 89
+
+PROGRAM
+
+import java.util.*;
+	class Minmax
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the array length: ");
+			int n=input.nextInt();
+			int[] arr=new int[n];
+			System.out.println("Enter the array elements: ");
+			for(int i=0;i<n;i++)
+			{
+				arr[i]=input.nextInt();
+			}
+			int min=arr[0];
+			int max=arr[0];
+			for(int i=0;i<n;i++)
+			{
+				if(arr[i]<min)
+				{
+					min=arr[i];
+				}
+				if(arr[i]>max)
+				{
+					max=arr[i];
+				}
+			}
+			System.out.println("The minimum value is: "+min);
+			System.out.println("The maximum value is: "+max);
+		}
+	}						
+			
+		

@@ -1,0 +1,27 @@
+INPUT
+2004
+
+
+OUTPUT
+2004 is leap year
+
+PROGRAM
+
+import java.util.*;
+	class Leapyear
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the number: ");
+			int year=input.nextInt();
+			if(year%4==0||year%100==0)
+			{
+				System.out.print(year+ " is leap year");
+			}
+			else
+			{
+			System.out.print(year+ " is  not leap year");
+			}
+		}
+	}

@@ -1,0 +1,24 @@
+INPUT
+5
+
+OUTPUT
+Factorial of 5 is 120
+
+PROGRAM
+
+import java.util.*;
+	class Factorial
+	{
+		public static void main(String arg[])
+		{
+			int result=1;
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the number : ");
+			int num=input.nextInt();		
+			for(int i=1;i<=num;i++)
+			{
+				result=result*i;
+			}
+			System.out.print("Factorial of "+num+" is "+ result);
+		}
+	}		

@@ -1,0 +1,56 @@
+INPUT
+Enter the array length: 4
+Enter the array elements:
+1
+2
+3
+4
+
+OUTPUT
+decending order:
+4
+3
+2
+1
+
+PROGRAM
+
+import java.util.*;
+	class DecendingOrder
+	{
+		public static void main(String arg[])
+		{
+			Scanner input=new Scanner(System.in);
+			System.out.print("Enter the array length: ");
+			int n=input.nextInt();
+			int[] arr=new int[n];
+			System.out.println("Enter the array elements: ");
+			for(int i=0;i<n;i++)
+			{
+				arr[i]=input.nextInt();
+			}
+			System.out.println("The array elements are:");
+			for(int i=0;i<n;i++)
+			{
+				System.out.println(arr[i]+" ");
+			}
+			for(int i=0;i<n;i++)
+			{
+				for(int j=i+1;j<n;j++)
+				{
+					if(arr[i]<arr[j])
+					{
+						int temp=arr[i];
+						arr[i]=arr[j];
+						arr[j]=temp;
+					}
+				}
+			}
+			System.out.println("Decending order:");
+			for(int i=0;i<n;i++)
+			{
+
+				System.out.println(arr[i]+" ");
+			}
+		}
+	}
